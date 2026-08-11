@@ -43,7 +43,8 @@
             statusText.style.color = "blue";
 
             try {
-                const response = await fetch("https://api-partitura-v2.onrender.com/upload", {
+                // Rota raiz (padrão) do servidor
+                const response = await fetch("https://api-partitura-v2.onrender.com/", {
                     method: "POST",
                     body: formData
                 });
